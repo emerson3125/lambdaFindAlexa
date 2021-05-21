@@ -22,7 +22,6 @@ exports.handler = async function(event, context) {
     await conn;
     conn.model('touch_users', new mongoose.Schema({
       primer_nombre: String,
-      segundo_nombre: String,
       primer_apellido: String,
       segundo_apellido: String,
       cedula: Number,
